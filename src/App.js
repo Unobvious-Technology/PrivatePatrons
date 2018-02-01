@@ -33,7 +33,7 @@ class App extends Component {
               </svg>
             </div>
             <p class="Media-body">
-              Make the most of your time by automagically responding and filtering some of your enquiries. Don't waste with time wasters.
+              Make the most of your time by automagically responding and filtering some of your enquiries. Don't waste time with time wasters.
             </p>
           </div>
           <div class="Media">
@@ -43,7 +43,7 @@ class App extends Component {
               </svg>
             </div>
             <p class="Media-body">
-              Enhance your privacy and safety with smart tools and secure technology, helping you to increase your income.
+              Enhance your privacy and safety with smart tools and secure technology.
             </p>
           </div>
           <div class="Media">
