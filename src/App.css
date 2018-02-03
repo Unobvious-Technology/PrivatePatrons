@@ -31,13 +31,12 @@
 .App-header--background span {
   width: 140px;
   height: 140px;
-  background: black;
-  opacity: 0.14;
+  background: #6644B3;
 }
 
 .App-header--background :nth-child(1) {
   left: 0;
-  opacity: 0.22;
+  background: #553399;
 }
 
 .App-header--background :nth-child(2) {
@@ -52,7 +51,7 @@
 .App-header--background :nth-child(4) {
   bottom: 0;
   right: 0;
-  opacity: 0.22;
+  background: #553399;
 }
 
 .App-header--background :nth-child(5) {
@@ -130,8 +129,7 @@
 }
 
 .App-intro {
-  opacity: 0.5;
-  color: hsl(0, 0%, 100%);
+  color: #BBABE6;
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
@@ -249,11 +247,11 @@
 }
 
 #footer a {
-  color: #b39ddb;
+  color: #BBABE6;
   text-decoration: none;
 }
 #footer a:hover,
 #footer a:focus {
   text-decoration: none;
-  color: #553399;
+  color: #6644B3;
 }
