@@ -1,0 +1,14 @@
+type Query {
+  "Returns a string describing the health status of the server"
+  healthz: String!
+}
+
+type Mutation {
+  "See: https://github.com/graphql/graphql-js/issues/937"
+  _nastyWorkAround: Boolean
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

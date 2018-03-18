@@ -13,6 +13,11 @@ const commonConfig = {
           {
             test: /\.(ts)$/,
             use: ["babel-loader", "ts-loader"]
+          },
+          {
+            test: /\.(graphql|gql)$/,
+            exclude: /node_modules/,
+            loader: "graphql-tag/loader"
           }
         ]
       }
