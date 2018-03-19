@@ -41,6 +41,13 @@ var browserConfig = {
     filename: "bundle.js",
     publicPath: "/public",
   },
+  // TODO: Figure out how to do manifest
+  // optimization: {
+  //   runtimeChunk: true,
+  //   splitChunks: {
+  //     chunks: "all",
+  //   },
+  // },
   plugins: [
     new webpack.DefinePlugin({
       __isBrowser__: "true",
