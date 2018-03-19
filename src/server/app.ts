@@ -13,10 +13,7 @@ const router = new Router();
 
 // Note: We want "build/public" or "public", relative to the built "server.js" file,
 // not a path relative to the source, which is what webpack gives for __dirname
-const publicPath = path.join(
-  path.dirname(process.mainModule.filename),
-  "public"
-);
+const publicPath = path.join(path.dirname(process.mainModule.filename), "public");
 
 // Static file handling:
 //    Implemented this was as koa-static doesn't play nicely with webpack / dist
