@@ -9,10 +9,10 @@ const commonConfig = {
       {
         oneOf: [
           // TODO: Base on create-react-app's webpack config:
-          { test: /\.(js)$/, use: "babel-loader" },
+          { test: /\.(jsx?)$/, use: "babel-loader" },
           {
-            test: /\.(ts)$/,
-            use: ["babel-loader", "ts-loader"]
+            test: /\.(tsx?)$/,
+            use: ["babel-loader", "ts-loader"],
           },
           {
             test: /\.(graphql|gql)$/,
@@ -24,8 +24,8 @@ const commonConfig = {
     ]
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
-  }
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
+  },
 };
 
 var browserConfig = {
