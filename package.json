@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev:webpack": "webpack --watch",
-    "dev:server": "nodemon --watch 'build/server.js' --exec 'node build/server.js'",
+    "dev:server": "nodemon --watch 'build/server.js' --exec 'node build/server.js' | pino",
     "start:dev": "run-p dev:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -41,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "nodemon": "^1.17.2",
     "npm-run-all": "^4.1.2",
+    "pino": "^4.0.2",
     "prettier": "^1.11.1",
     "ts-loader": "^4.1.0",
     "tslint": "^5.9.1",
