@@ -1,14 +1,26 @@
 import * as React from "react";
 import * as ReactRouter from "react-router";
+import { graphql } from "react-apollo";
+import gql from "graphql-tag";
 
-interface IAppProps {
-  data: any;
-}
-
-class App extends React.Component<IAppProps> {
-  render() {
-    return <div>Hello {this.props.data.name}</div>;
+const GET_HEALTH = gql`
+  query {
+    healthz
   }
-}
+`;
 
-export default App;
+// interface IAppProps {
+//   loading: boolean;
+//   error: boolean;
+//   data: {
+//     healthz: string;
+//   };
+// }
+
+const App = ({ loading, error, data }) => {
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error :(</div>;
+  return <div>Hello {data.healthz}</div>;
+};
+
+export default graphql(GET_HEALTH)(App);
