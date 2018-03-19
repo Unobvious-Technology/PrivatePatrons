@@ -1,6 +1,7 @@
 import * as path from "path";
 
 import * as Koa from "koa";
+import * as logger from "koa-pino-logger";
 import * as Router from "koa-router";
 import * as send from "koa-send";
 
@@ -32,6 +33,7 @@ router.get("/*", renderHandler);
 // Trust proxy header fields, allowing use of Cookies with secure flag
 app.proxy = true;
 
+app.use(logger());
 app.use(router.routes());
 app.use(router.allowedMethods());
 
