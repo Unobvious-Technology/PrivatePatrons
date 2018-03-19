@@ -9,9 +9,14 @@ const commonConfig = {
       {
         oneOf: [
           // TODO: Base on create-react-app's webpack config:
-          { test: /\.(jsx?)$/, use: "babel-loader" },
+          {
+            test: /\.(jsx?)$/,
+            exclude: /node_modules/,
+            use: "babel-loader",
+          },
           {
             test: /\.(tsx?)$/,
+            exclude: /node_modules/,
             use: ["babel-loader", "ts-loader"],
           },
           {
