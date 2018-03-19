@@ -11,6 +11,9 @@ router.get("/", async ctx => {
   ctx.body = "Hello Koa!";
 });
 
+// Trust proxy header fields, allowing use of Cookies with secure flag
+app.proxy = true;
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
