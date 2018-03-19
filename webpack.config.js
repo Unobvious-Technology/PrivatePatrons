@@ -34,7 +34,7 @@ var browserConfig = {
   output: {
     path: path.resolve(__dirname, "build", "public"),
     filename: "bundle.js",
-    publicPath: "/"
+    publicPath: "/public",
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -51,7 +51,7 @@ var serverConfig = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "server.js",
-    publicPath: "/"
+    publicPath: "/",
   },
   plugins: [
     new webpack.DefinePlugin({
