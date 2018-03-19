@@ -11,22 +11,7 @@
     "tslint.run": "onType",
     "tslint.exclude": "package.json",
     "prettier.ignorePath": ".prettierignore",
-    "editor.formatOnSave": false,
-    // Enable per-language
-    "[javascript]": {
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2
-    },
-    "[json]": {
-      "editor.quickSuggestions": {
-        "strings": true
-      },
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2,
-    },
-    "[typescript]": {
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2
-    }
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
   }
 }
