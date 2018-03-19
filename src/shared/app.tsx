@@ -1,9 +1,13 @@
 import * as React from "react";
 import * as ReactRouter from "react-router";
 
-class App extends React.Component {
+interface IAppProps {
+  data: any;
+}
+
+class App extends React.Component<IAppProps> {
   render() {
-    return <div>Hello World</div>;
+    return <div>Hello {this.props.data.name}</div>;
   }
 }
 
