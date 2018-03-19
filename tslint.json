@@ -36,6 +36,7 @@
     "no-unused-expression": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
+    "no-submodule-imports": false,
     "object-literal-sort-keys": false,
     "radix": true,
     "switch-default": true,
