@@ -17,11 +17,11 @@ const commonConfig = {
           {
             test: /\.(graphql|gql)$/,
             exclude: /node_modules/,
-            loader: "graphql-tag/loader"
-          }
-        ]
-      }
-    ]
+            loader: "graphql-tag/loader",
+          },
+        ],
+      },
+    ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
@@ -30,7 +30,7 @@ const commonConfig = {
 
 var browserConfig = {
   ...commonConfig,
-  entry: ["./src/browser/index.ts"],
+  entry: ["./src/browser/index.tsx"],
   output: {
     path: path.resolve(__dirname, "build", "public"),
     filename: "bundle.js",
@@ -38,9 +38,9 @@ var browserConfig = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      __isBrowser__: "true"
-    })
-  ]
+      __isBrowser__: "true",
+    }),
+  ],
 };
 
 var serverConfig = {
@@ -55,9 +55,9 @@ var serverConfig = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      __isBrowser__: "false"
-    })
-  ]
+      __isBrowser__: "false",
+    }),
+  ],
 };
 
 module.exports = [browserConfig, serverConfig];
