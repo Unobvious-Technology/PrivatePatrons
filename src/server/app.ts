@@ -5,6 +5,7 @@ import * as Router from "koa-router";
 import * as send from "koa-send";
 
 import GraphqlRouter from "./graphql-router";
+import renderHandler from "./render-handler";
 
 const app = new Koa();
 const router = new Router();
@@ -25,9 +26,8 @@ router.get("/public/:file+", async ctx => {
 // GraphQL handling:
 router.use("/graphql", GraphqlRouter.routes(), GraphqlRouter.allowedMethods());
 
-router.get("/", async ctx => {
-  ctx.body = "Hello Koa!";
-});
+// Render the application:
+router.get("/*", renderHandler);
 
 // Trust proxy header fields, allowing use of Cookies with secure flag
 app.proxy = true;
