@@ -20,18 +20,19 @@
   overflow: hidden;
   transform: skewY(-4deg);
   transform-origin: top left;
-  background: #7755CC;
+  background: #7755cc;
   z-index: -1;
 }
 
-.App-header--background, .App-header--background span {
+.App-header--background,
+.App-header--background span {
   position: absolute;
 }
 
 .App-header--background span {
   width: 140px;
   height: 140px;
-  background: #6644B3;
+  background: #6644b3;
 }
 
 .App-header--background :nth-child(1) {
@@ -64,7 +65,7 @@
   bottom: 140px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .App-header {
     height: 28rem;
   }
@@ -105,7 +106,7 @@
 
 .App-title {
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 70px;
   letter-spacing: -1px;
   line-height: 1.2;
@@ -118,9 +119,9 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .App-title {
-    font-size: 48px
+    font-size: 48px;
   }
 
   .App-intro {
@@ -129,7 +130,7 @@
 }
 
 .App-intro {
-  color: #BBABE6;
+  color: #bbabe6;
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
@@ -160,7 +161,7 @@
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  background: #7755CC;
+  background: #7755cc;
   color: white;
   transition: all 0.3s;
 }
@@ -216,8 +217,7 @@
   margin: 0;
 }
 
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .Media {
     flex-direction: column;
     align-items: center;
@@ -247,11 +247,11 @@
 }
 
 #footer a {
-  color: #BBABE6;
+  color: #bbabe6;
   text-decoration: none;
 }
 #footer a:hover,
 #footer a:focus {
   text-decoration: none;
-  color: #6644B3;
+  color: #6644b3;
 }
