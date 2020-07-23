@@ -15,28 +15,11 @@ class App extends Component {
             <span></span>
           </div>
           <h1 className="App-title">PrivatePatrons</h1>
-          <p className="App-intro">
-            The Inbox for Sex Workers
-            <br />
-            Launching in 2018
-          </p>
-          <div className="App-intro-buttons">
-            <a
-              className="button button--primary"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf2Nc6LWhQksoHJ87jH5j9_PaXJ0oF83vsXkI64ERaRlkESBw/viewform?usp=sf_link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Request Invite
-            </a>
-            <a className="button" href="#content">
-              Learn More
-            </a>
-          </div>
+          <p className="App-intro">The Inbox for Sex Workers</p>
         </header>
         <section id="content">
           <h2>
-            <span>Simplify Your Conversations</span>{" "}
+            <span>Streamline Your Conversations</span>{" "}
             <span>With Potential Clients</span>
           </h2>
           <div class="Media">
@@ -49,9 +32,10 @@ class App extends Component {
               </svg>
             </div>
             <p class="Media-body">
-              Make the most of your time by automagically responding and
-              filtering some of your enquiries. Don't waste time with time
-              wasters.
+              Save time with magical filtering of your enquiries. <br />
+              Let automation handle the standard questions and collection of
+              required information. <br />
+              Don't waste time with time wasters.
             </p>
           </div>
           <div class="Media">
@@ -64,8 +48,17 @@ class App extends Component {
               </svg>
             </div>
             <p class="Media-body">
-              Enhance your privacy and safety with smart tools and secure
-              technology.
+              Improve your privacy and safety with smart tools and secure
+              technology. All your data is{" "}
+              <a
+                href="https://protonmail.com/blog/what-is-end-to-end-encryption/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                end-to-end encrypted
+              </a>
+              . <br />
+              We can't read your messages.
             </p>
           </div>
           <div class="Media">
@@ -78,8 +71,9 @@ class App extends Component {
               </svg>
             </div>
             <p class="Media-body">
-              Designed to be easy to use and work where you work, whether that's
-              on your laptop or your phone.
+              Designed to work where you work. Easy to use on your phone on the
+              way to an appointment, or on your laptop/computer from the comfort
+              home or favourite café.
             </p>
           </div>
         </section>
@@ -93,7 +87,7 @@ class App extends Component {
           >
             Unobvious Technology
           </a>{" "}
-          &copy; 2018
+          &copy; 2020
         </footer>
       </div>
     );
