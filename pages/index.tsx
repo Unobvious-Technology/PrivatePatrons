@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>PrivatePatrons - The Inbox for Sex Workers</title>
+        <meta content="text/html; charset=UTF-8" name="Content-Type" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           property="og:title"
@@ -22,6 +23,9 @@ export default function Home() {
           property="og:image"
           content="https://privatepatrons.com/og-image.png"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@privatepatrons" />
+        <meta name="twitter:creator" content="@unobvioustech" />
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
           rel="stylesheet"
