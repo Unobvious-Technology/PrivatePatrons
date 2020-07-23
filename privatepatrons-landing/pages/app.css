@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.4;
+  background: #ffffff;
+  color: #252525;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  position: relative;
+  padding: 5rem 0 7.5rem 0;
+  color: white;
+}
+
+.App-header--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+  z-index: -1;
+  background: #7755cc;
+
+  --tile-size: 8rem;
+}
+
+.App-header--background,
+.App-header--background span {
+  position: absolute;
+}
+
+.App-header--background span {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background: #6644b3;
+}
+
+.App-header--background-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.App-header--background-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.App-header--background-top span {
+  left: 0;
+  top: 0;
+}
+
+.App-header--background-bottom span {
+  bottom: 0;
+  right: 0;
+}
+
+.App-header--background-top :nth-child(1) {
+  background: #553399;
+}
+
+.App-header--background-top :nth-child(2) {
+  left: var(--tile-size);
+}
+
+.App-header--background-top :nth-child(3) {
+  top: var(--tile-size);
+}
+
+.App-header--background-bottom :nth-child(1) {
+  background: #553399;
+}
+
+.App-header--background-bottom :nth-child(2) {
+  right: var(--tile-size);
+}
+
+.App-header--background-bottom :nth-child(3) {
+  bottom: var(--tile-size);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .App-header {
+    padding: 4rem 0;
+  }
+
+  .App-header--background {
+    --tile-size: 5rem;
+  }
+
+  .App-header--background-top {
+    top: -1.5rem;
+  }
+
+  .App-header--background-bottom {
+    bottom: -2.5rem;
+    right: -3.2rem;
+  }
+}
+
+.App-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 70px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .App-title {
+    font-size: 44px;
+    font-weight: 700;
+  }
+
+  .App-intro {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1.2rem 0 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .App-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .App-intro {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1.2rem 0 2rem;
+  }
+}
+
+.App-intro {
+  color: #bbabe6;
+  color: #dbd2f2;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 1.5em 0;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 1em 0;
+  max-width: 670px;
+}
+
+#content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+#content a {
+  color: #590089;
+}
+
+#content h3 span {
+  display: inline-block;
+}
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+  margin: 2.2em 0;
+}
+
+.Media-figure {
+  margin-right: 1.5em;
+}
+
+.Media-figure svg {
+  height: 52px;
+  width: 52px;
+}
+
+.Media-body {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #content br {
+    display: none;
+  }
+  .Media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Media-figure {
+    margin: 1.5em 0;
+  }
+  .Media-figure svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .Media-body {
+    margin: 0 1.5em;
+    text-align: center;
+  }
+}
+
+#footer {
+  margin: 5rem 0;
+  color: #bbb;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+#footer a {
+  color: #bbabe6;
+  text-decoration: none;
+}
+#footer a:hover,
+#footer a:focus {
+  text-decoration: none;
+  color: #6644b3;
+}
