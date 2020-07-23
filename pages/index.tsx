@@ -8,6 +8,20 @@ export default function Home() {
       <Head>
         <title>PrivatePatrons - The Inbox for Sex Workers</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          property="og:title"
+          content="PrivatePatrons - The Inbox for Sex Workers"
+        />
+        <meta
+          property="og:description"
+          content="Streamline your conversations with potential clients using magical filtering, automation, smart tools and secure technology. Don't waste time with time wasters."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://privatepatrons.com" />
+        <meta
+          property="og:image"
+          content="https://privatepatrons.com/og-image.png"
+        />
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
           rel="stylesheet"
