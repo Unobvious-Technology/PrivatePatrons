@@ -23,9 +23,6 @@ export default function Home() {
           property="og:image"
           content="https://privatepatrons.com/og-image.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@privatepatrons" />
-        <meta name="twitter:creator" content="@unobvioustech" />
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
           rel="stylesheet"
