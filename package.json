@@ -10,7 +10,7 @@
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "9.4.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "styled-components": "^5.0.0"
